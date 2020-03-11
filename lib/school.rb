@@ -35,8 +35,8 @@ class School
            @sorting[@sort_by_keys[counter]] << @by_value[counter]
         end
         counter += 1
-      end
+        end
         # @sorting
-        @roster[@grade]
+        @roster.keys
     end
 end
