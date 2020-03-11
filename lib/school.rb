@@ -28,7 +28,7 @@ class School
             @sorting[by_key] << value.join(" , ")
           else
              @sorting[by_key] = []
-             @sorting[by_key] << value.join(" , ")
+             @sorting[by_key] << value.join(" ")
          end
          counter += 1
        }
