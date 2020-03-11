@@ -37,6 +37,6 @@ class School
         counter += 1
         end
         @sorting
-      
+
     end
 end
