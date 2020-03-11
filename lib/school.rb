@@ -24,7 +24,7 @@ class School
       @sorting = {}
        keys =  @roster.keys.sort
       @roster.map {|by_key,by_value|
-       values =  by_value.sort
+       values =  @roster[by_key[counter]]
         if @sorting.has_key?(keys[counter])
            @sorting[keys[counter]] << values.join(",")
          else
