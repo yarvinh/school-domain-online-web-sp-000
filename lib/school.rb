@@ -22,9 +22,9 @@ class School
     def sort
       counter = 0
       @sorting = {}
-       keys =  @roster.keys.sort
+       key =  @roster.keys.sort
       @roster.map {|by_key,by_value|
-       values =  @roster[by_key]
+       values =  @roster[key]
         if @sorting.has_key?(keys[counter])
            @sorting[keys[counter]] << values.join(",")
          else
