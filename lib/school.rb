@@ -33,7 +33,7 @@ class School
         end
         counter += 1
        }
-       @roster
+       @sorting
       # counter = 0
       # @sorting = {}
       # @sort_by_keys = @roster.keys.sort
