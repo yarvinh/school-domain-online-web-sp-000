@@ -31,14 +31,14 @@ class School
         if @sorting.has_key?(@sort_by_keys[counter])
            @by_value[counter].map {|each|
           if  @sorting[@sort_by_keys[counter]] == @roster.keys
-            @sorting[@sort_by_keys[counter]] << each}
-          end
+            @sorting[@sort_by_keys[counter]] << each
+          end}
         else
            @sorting[@sort_by_keys[counter]] = []
            @by_value[counter].map {|each|
            if  @sorting[@sort_by_keys[counter]] == @roster.keys
-              @sorting[@sort_by_keys[counter]] << each}
-           end
+              @sorting[@sort_by_keys[counter]] << each
+           end}
         end
         counter += 1
       end
