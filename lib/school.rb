@@ -20,9 +20,10 @@ class School
         @roster[grade]
     end
     def sort
-      @roster.keys
       @roster.map {|a,b|
-       b}
+        a.sort
+        b.sort
+       }
       # counter = 0
       # @sorting = {}
       # @sort_by_keys = @roster.keys.sort
