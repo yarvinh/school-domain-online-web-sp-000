@@ -28,19 +28,18 @@ class School
       @sort_by_keys = @roster.keys.sort
       @by_value = @roster.values
       while counter < @roster.length
-        # index = sort_by_keys[]
         if @sorting.has_key?(@sort_by_keys[counter])
-            # @sorting[@sort_by_keys] << @roster[@grade]
            @by_value[counter].map {|each|
-             @sorting[@sort_by_keys] << each}
+          if  @sorting[@sort_by_keys] == @roster.keys
+            @sorting[@sort_by_keys] << each
+          end
         else
            @sorting[@sort_by_keys[counter]] = []
            @by_value[counter].map {|each|
-             @sorting[@sort_by_keys[counter]] << each}
-          #  @sorting[@sort_by_keys[counter]] << @roster[@grade]
+           @sorting[@sort_by_keys[counter]] << each}
         end
-       counter += 1
+        counter += 1
       end
-      @sorting
+        @sorting
     end
 end
