@@ -36,6 +36,7 @@ class School
         end
         counter += 1
       end
-        @sorting
+        # @sorting
+        @roster
     end
 end
