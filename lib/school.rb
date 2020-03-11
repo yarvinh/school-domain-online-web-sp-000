@@ -30,10 +30,10 @@ class School
       while counter < @roster.length
           @by_value = @roster[@sort_by_keys[counter]]
         if   @sorting.has_key?(@sort_by_keys[counter])
-           @sorting[@sort_by_keys[counter]] << @by_value[counter]
+           @sorting[@sort_by_keys[counter]] << @by_value
         else
            @sorting[@sort_by_keys[counter]] = []
-           @sorting[@sort_by_keys[counter]] << @by_value[counter]
+           @sorting[@sort_by_keys[counter]] << @by_value
         end
         counter += 1
         end
