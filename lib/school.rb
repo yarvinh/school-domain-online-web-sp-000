@@ -22,6 +22,7 @@ class School
     def sort
       counter = 0
       @sorting = {}
+       keys =  @roster.keys.sort
       @roster.map {|by_key,by_value|
       # keys =  by_key.sort
        values =  by_value.sort
