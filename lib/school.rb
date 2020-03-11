@@ -17,7 +17,7 @@ class School
        end
     end
     def grade
-        @roster.keys
+        @roster
     end
     def sort
       counter = 0
