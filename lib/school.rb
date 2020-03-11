@@ -16,17 +16,16 @@ class School
           @roster[@grade] << student
        end
     end
-    # def grade=(grade)
-    #   if roster[grade] == @roster[@grade]
-    #     @roster[@grade]
-    #   end
-    #
-    # end
+    def grade=(grade)
+      if roster[grade] == @roster[@grade]
+        @roster[@grade]
+      end
+    
+    end
     def sort
       counter = 0
       @sorting = {}
       @sort_by_keys = @roster.keys.sort
-        #  @by_value = @roster.values.sort
       while counter < @roster.length
           @by_value = @roster[@sort_by_keys[counter]].sort
         if @sorting.has_key?(@sort_by_keys[counter])
@@ -42,6 +41,5 @@ class School
         counter += 1
         end
         @sorting
-
     end
 end
