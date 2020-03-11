@@ -16,8 +16,8 @@ class School
           @roster[@grade] << student
        end
     end
-    def grade(a)
-        @roster[a]
+    def grade(grade)
+        @roster[grade]
     end
     def sort
       counter = 0
