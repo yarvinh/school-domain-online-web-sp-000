@@ -37,6 +37,6 @@ class School
         counter += 1
         end
         # @sorting
-        @roster.keys
+        @roster.keys.sort
     end
 end
