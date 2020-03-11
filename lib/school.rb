@@ -22,7 +22,7 @@ class School
     def sort
       @roster.keys
       @roster.map {|a,b|
-       a}
+       b}
       # counter = 0
       # @sorting = {}
       # @sort_by_keys = @roster.keys.sort
