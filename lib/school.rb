@@ -20,23 +20,24 @@ class School
         @roster[grade]
     end
     def sort
-      counter = 0
-      @sorting = {}
-      @sort_by_keys = @roster.keys.sort
-      while counter < @roster.length
-          @by_value = @roster[@sort_by_keys[counter]].sort
-        if @sorting.has_key?(@sort_by_keys[counter])
-          @by_value.map{|each|
-           @sorting[@sort_by_keys[counter]] << each
-         }
-        else
-           @sorting[@sort_by_keys[counter]] = []
-           @by_value.map {|each|
-           @sorting[@sort_by_keys[counter]] << each
-         }
-        end
-        counter += 1
-        end
-        @sorting
+      @roster.keys
+      # counter = 0
+      # @sorting = {}
+      # @sort_by_keys = @roster.keys.sort
+      # while counter < @roster.length
+      #     @by_value = @roster[@sort_by_keys[counter]].sort
+      #   if @sorting.has_key?(@sort_by_keys[counter])
+      #     @by_value.map{|each|
+      #      @sorting[@sort_by_keys[counter]] << each
+      #    }
+      #   else
+      #      @sorting[@sort_by_keys[counter]] = []
+      #      @by_value.map {|each|
+      #      @sorting[@sort_by_keys[counter]] << each
+      #    }
+      #   end
+      #   counter += 1
+      #   end
+      #   @sorting
     end
 end
