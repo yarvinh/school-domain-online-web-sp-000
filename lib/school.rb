@@ -28,7 +28,7 @@ class School
       @sort_by_keys = @roster.keys.sort
       @by_value = @roster.values
       while counter < @roster.length
-           @sorting.has_key?(@sort_by_keys[counter])
+        if   @sorting.has_key?(@sort_by_keys[counter])
            @sorting[@sort_by_keys] << @by_value[counter]
         else
            @sorting[@sort_by_keys] = []
