@@ -37,7 +37,7 @@ class School
            @sorting[@sort_by_keys[counter]] = []
           #  @by_value[counter].map {|each|
           #    @sorting[@sort_by_keys[counter]] << each}
-           @sorting[@sort_by_keys[counter]] << @roster[:@sort_by_keys]
+           @sorting[@sort_by_keys[counter]] << @roster[@grade.values]
         end
        counter += 1
       end
