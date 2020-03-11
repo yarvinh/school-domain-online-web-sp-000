@@ -26,10 +26,10 @@ class School
       @roster.map {|by_key,by_value|
        values =  by_value.sort
         if @sorting.has_key?(keys[counter])
-           @sorting[keys[counter]] << values
+           @sorting[keys[counter]] << values.join
          else
             @sorting[keys[counter]] = []
-            @sorting[keys[counter]] << values
+            @sorting[keys[counter]] << values,join
         end
         counter += 1
        }
