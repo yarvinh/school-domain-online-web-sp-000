@@ -16,11 +16,8 @@ class School
           @roster[@grade] << student
        end
     end
-    def grade=(grade)
-      if roster[grade] == @roster[@grade]
-        @roster[@grade]
-      end
-
+    def grade
+        @roster.keys
     end
     def sort
       counter = 0
