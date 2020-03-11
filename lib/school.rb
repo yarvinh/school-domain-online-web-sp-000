@@ -36,7 +36,7 @@ class School
         end
         counter += 1
         end
-        # @sorting
-        @roster[@grade][1]
+        @sorting
+      
     end
 end
