@@ -30,7 +30,7 @@ class School
       while counter < @roster.length
         # index = sort_by_keys[]
         if @sorting.has_key?(@sort_by_keys[counter])
-            @sorting[@sort_by_keys] << roster[@sort_by_keys]
+            @sorting[@sort_by_keys] << @roster[@grade]
           #  @by_value[counter].map {|each|
           #    @sorting[@sort_by_keys] << each}
         else
