@@ -23,16 +23,18 @@ class School
       counter = 0
       @sorting = {}
       @roster.sort.map {|by_key,by_value|
-       values =  @roster[by_key]
-        if @sorting.has_key?(keys[counter])
-           @sorting[keys[counter]] << values.join(",")
-         else
-            @sorting[keys[counter]] = []
-            @sorting[keys[counter]] << values.join(",")
-        end
-        counter += 1
+        by_key
+
+      #  values =  @roster[by_key]
+      #   if @sorting.has_key?(keys[counter])
+      #      @sorting[keys[counter]] << values.join(",")
+      #    else
+      #       @sorting[keys[counter]] = []
+      #       @sorting[keys[counter]] << values.join(",")
+      #   end
+      #   counter += 1
        }
-       @sorting
+      #  @sorting
       # counter = 0
       # @sorting = {}
       # @sort_by_keys = @roster.keys.sort
