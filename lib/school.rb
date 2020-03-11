@@ -30,7 +30,7 @@ class School
         #  else
         #     @sorting[keys[counter]] = []
         #     @sorting[keys[counter]] << values
-        # 
+        #
         # end
         # counter += 1
        }
