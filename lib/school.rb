@@ -21,6 +21,8 @@ class School
     end
     def sort
       @roster.keys
+      @roster.map {|a,b|
+       a}
       # counter = 0
       # @sorting = {}
       # @sort_by_keys = @roster.keys.sort
