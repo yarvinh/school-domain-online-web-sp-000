@@ -31,7 +31,7 @@ class School
       #       @sorting[keys[counter]] = []
       #       @sorting[keys[counter]] << values
       #   end
-      #   counter += 1
+         counter += 1
        }
         #  @sorting
       # counter = 0
