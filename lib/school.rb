@@ -29,7 +29,7 @@ class School
            @sorting[keys[counter]] << values.join
          else
             @sorting[keys[counter]] = []
-            @sorting[keys[counter]] << values,join
+            @sorting[keys[counter]] << values.join
         end
         counter += 1
        }
